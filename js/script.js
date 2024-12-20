@@ -125,3 +125,15 @@ const source = [
         "url": "images/dance.gif"
     }
 ];
+
+const gridCalendar = document.getElementById('calendar');
+
+// ciclo per generare le caselle
+source.forEach((item, index) => {
+    const box = document.createElement('div');
+
+    //testo all'interno della casella
+    box.innerText = index + 1;
+
+    gridCalendar.append(box);
+});
